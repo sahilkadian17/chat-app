@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="chat__section">
+        <div class="logo">
+            <img src="/whatsapp.png" alt="" class="whatsapp__logo">
+            <h1 class="logo_title">WhatsApp</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <form action="#" class="send__message">
+                <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+                <button class="send__logo" type="submit"><img src="/send.png" alt="" class="send__img"></button>
+            </form>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>

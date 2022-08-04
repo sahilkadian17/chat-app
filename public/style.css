@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2f3b43;
+    font-family: 'Montserrat', sans-serif;
+}
+section.chat__section {
+    width: 100vw;
+    height: 100vh;
+    background: #0b141a;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.logo {
+    padding: 20px;
+    background: #202c33;
+    display: flex;
+    align-items: center;
+}
+.logo .whatsapp__logo{
+    width: 40px;
+    height: 40px;
+}
+.logo h1 {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+}
+.message__area{
+    max-height: 75vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+.send__message{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 20px;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100vw;
+    z-index: 1;
+}
+.send__img{
+    padding: 10px;
+    width: 50px;
+}
+.send__logo{
+    background-color: #6ce980;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+}
+textarea{
+    width:90vw;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    background: #2a3942;
+    color: #e9edef;
+    resize: none;
+    border-radius: 2rem;
+    margin: 0 20px;
+}
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming {
+    background: #202c33;
+    color: #e9edef;  
+}
+.outgoing {
+    background: #255c4b;
+    color: #e9edef;
+    margin-left: auto;
+}
+.message h4 {
+    text-transform: capitalize;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #e9edef;
+    font-size: 14px;
+}
